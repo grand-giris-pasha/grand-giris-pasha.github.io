@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Grandbet resmi casino Türkiye platformuna güvenle erişin. Grand Bet güvenli girişiyle premium lisanslı casino oyunlarının keyfini çıkarın.">
+<meta name="keywords" content="grand bet giriş Türkiye, grandbet resmi casino, grand bet güvenli giriş, grandbet Türkiye">
+<title>Grandbet Resmi Giriş Türkiye | Grand Bet Güvenli Casino Erişimi</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --gold-dim: #8a6e2f;
+    --obsidian: #0a0a0c;
+    --charcoal: #121218;
+    --card-bg: #16161f;
+    --border: rgba(201,168,76,0.18);
+    --text: #e8e4da;
+    --text-dim: #8a8578;
+    --accent: #c9a84c;
+    --red: #c94c4c;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--obsidian);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.7;
+  }
+
+  /* GRAIN TEXTURE OVERLAY */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(32px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes shimmer {
+    0%,100% { opacity: 0.6; }
+    50%     { opacity: 1; }
+  }
+  @keyframes rotateSlow {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 0 rgba(201,168,76,0.3); }
+    50%     { box-shadow: 0 0 0 12px rgba(201,168,76,0); }
+  }
+  @keyframes lineGrow {
+    from { width: 0; }
+    to   { width: 60px; }
+  }
+
+  .fade-up { animation: fadeUp 0.8s ease forwards; }
+
+  /* ========== NAVBAR ========== */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 60px;
+    background: linear-gradient(to bottom, rgba(10,10,12,0.95), transparent);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid rgba(201,168,76,0.06);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .logo-mark {
+    width: 40px; height: 40px;
+    border: 1.5px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: rgba(201,168,76,0.06);
+  }
+
+  .logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .logo-text span { color: var(--gold); }
+
+  .nav-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .status-dot {
+    width: 7px; height: 7px;
+    background: #4caf50;
+    border-radius: 50%;
+    animation: shimmer 2s ease infinite;
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold);
+    color: var(--obsidian);
+    padding: 10px 26px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+    transition: background 0.3s, transform 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  /* ========== HERO ========== */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 120px 60px 80px;
+  }
+
+  /* Geometric background */
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 50%, rgba(201,168,76,0.05) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 20% 80%, rgba(201,168,76,0.03) 0%, transparent 60%);
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%);
+  }
+
+  .hero-diamond {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 380px; height: 380px;
+    border: 1px solid rgba(201,168,76,0.15);
+    rotate: 45deg;
+    animation: rotateSlow 40s linear infinite;
+  }
+  .hero-diamond::before {
+    content: '';
+    position: absolute;
+    inset: 30px;
+    border: 1px solid rgba(201,168,76,0.1);
+  }
+  .hero-diamond::after {
+    content: '';
+    position: absolute;
+    inset: 60px;
+    border: 1px solid rgba(201,168,76,0.07);
+  }
+
+  .hero-content {
+    position: relative;
+    max-width: 700px;
+    animation: fadeUp 1s ease 0.2s both;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--border);
+    padding: 8px 18px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 36px;
+    background: rgba(201,168,76,0.04);
+  }
+  .hero-badge::before {
+    content: '';
+    width: 20px; height: 1px;
+    background: var(--gold);
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(44px, 5.5vw, 76px);
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+  }
+  .hero h1 strong {
+    font-weight: 700;
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    max-width: 520px;
+    margin-bottom: 48px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--gold);
+    color: var(--obsidian);
+    padding: 16px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+    transition: all 0.3s;
+    animation: pulse 3s ease infinite;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); animation: none; }
+
+  .hero-trust {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .trust-item svg { color: var(--gold); flex-shrink: 0; }
+
+  /* ========== STATS ========== */
+  .stats {
+    background: var(--charcoal);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: var(--border);
+  }
+  .stats > * { background: var(--charcoal); }
+
+  .stat-item {
+    padding: 36px 40px;
+    text-align: center;
+    position: relative;
+  }
+  .stat-item::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    animation: lineGrow 1s ease 0.5s forwards;
+  }
+
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  /* ========== SECTIONS ========== */
+  section { padding: 100px 60px; }
+
+  .section-eyebrow {
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .section-eyebrow::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+    max-width: 100px;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 4vw, 58px);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+  .section-title em { color: var(--gold); font-style: italic; }
+
+  .section-desc {
+    font-size: 14px;
+    color: var(--text-dim);
+    max-width: 580px;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  /* ========== HOW TO ========== */
+  .how-to {
+    background: var(--charcoal);
+    border-top: 1px solid var(--border);
+  }
+
+  .how-to-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 60px;
+    align-items: start;
+  }
+
+  .how-to-text p {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.9;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .step {
+    display: flex;
+    gap: 28px;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .step:last-child { padding-bottom: 0; }
+  .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 21px;
+    top: 44px;
+    bottom: 0;
+    width: 1px;
+    background: var(--border);
+  }
+
+  .step-num {
+    width: 44px; height: 44px;
+    border: 1px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gold);
+    flex-shrink: 0;
+    background: rgba(201,168,76,0.04);
+  }
+
+  .step-content h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .step-content p {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ========== WHY ========== */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    margin-top: 60px;
+  }
+
+  .why-card {
+    background: var(--charcoal);
+    padding: 44px 36px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+  }
+  .why-card:hover { background: var(--card-bg); }
+  .why-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    transform: scaleX(0);
+    transition: transform 0.4s;
+  }
+  .why-card:hover::before { transform: scaleX(1); }
+
+  .why-icon {
+    width: 48px; height: 48px;
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+    font-size: 20px;
+    color: var(--gold);
+  }
+
+  .why-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: var(--text);
+    line-height: 1.3;
+  }
+  .why-card p {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  /* ========== GAMES ========== */
+  .games { background: var(--charcoal); border-top: 1px solid var(--border); }
+
+  .games-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 60px;
+    align-items: start;
+  }
+
+  .games-text p {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.9;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .game-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+  }
+
+  .game-cat {
+    background: var(--card-bg);
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.2s;
+    cursor: default;
+  }
+  .game-cat:hover { background: rgba(201,168,76,0.06); }
+
+  .game-cat-name {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--text);
+  }
+  .game-cat-icon {
+    width: 36px; height: 36px;
+    background: rgba(201,168,76,0.08);
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+  }
+
+  .game-cat-count {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--gold);
+    font-weight: 300;
+  }
+
+  /* ========== FAQ ========== */
+  .faq-list {
+    max-width: 820px;
+    margin: 60px auto 0;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .faq-q {
+    padding: 26px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text);
+    gap: 20px;
+    transition: color 0.2s;
+    user-select: none;
+    list-style: none;
+  }
+  .faq-q:hover { color: var(--gold); }
+
+  .faq-icon {
+    width: 28px; height: 28px;
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: var(--gold);
+    transition: transform 0.3s;
+  }
+
+  details[open] .faq-icon { transform: rotate(45deg); }
+
+  .faq-a {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    padding: 0 0 24px;
+    font-weight: 300;
+    max-width: 700px;
+  }
+
+  /* ========== CTA ========== */
+  .cta-section {
+    background: var(--charcoal);
+    border-top: 1px solid var(--border);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201,168,76,0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-section .section-eyebrow {
+    justify-content: center;
+  }
+  .cta-section .section-eyebrow::after { display: none; }
+  .cta-section .section-eyebrow::before {
+    content: '';
+    flex: unset;
+    width: 40px; height: 1px;
+    background: var(--border);
+  }
+
+  .cta-section .section-title { max-width: 700px; margin: 0 auto 20px; }
+  .cta-section .section-desc { margin: 0 auto 48px; text-align: center; }
+
+  .cta-note {
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+  }
+
+  /* ========== FOOTER ========== */
+  footer {
+    background: var(--obsidian);
+    border-top: 1px solid var(--border);
+    padding: 60px;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 36px;
+  }
+
+  .footer-brand p {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    max-width: 340px;
+    margin-top: 16px;
+    font-weight: 300;
+  }
+
+  .footer-col h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 12px; }
+  .footer-col ul li a {
+    font-size: 12px;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  .footer-col ul li a:hover { color: var(--gold); }
+
+  .responsible-box {
+    background: rgba(201,168,76,0.04);
+    border: 1px solid rgba(201,168,76,0.12);
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+
+  .responsible-box p {
+    font-size: 11px;
+    color: var(--text-dim);
+    line-height: 1.7;
+  }
+  .responsible-box a { color: var(--gold); }
+  .responsible-box strong { color: var(--text); }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 0.5px;
+  }
+
+  .footer-tags {
+    font-size: 11px;
+    color: rgba(138,133,120,0.5);
+    text-align: right;
+  }
+
+  /* ========== DECORATIVE DIVIDER ========== */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 60px;
+    opacity: 0.4;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--gold);
+  }
+  .divider span {
+    color: var(--gold);
+    font-size: 18px;
+  }
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 1024px) {
+    nav { padding: 20px 30px; }
+    .hero { padding: 120px 30px 80px; }
+    section { padding: 70px 30px; }
+    .stats { padding: 0; grid-template-columns: repeat(2, 1fr); }
+    .how-to-grid, .games-layout { grid-template-columns: 1fr; gap: 50px; }
+    .why-grid { grid-template-columns: 1fr 1fr; }
+    footer { padding: 50px 30px; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .footer-brand { grid-column: 1 / -1; }
+    .hero-diamond { display: none; }
+  }
+
+  @media (max-width: 640px) {
+    nav { padding: 18px 20px; }
+    .nav-status { display: none; }
+    .hero { padding: 100px 20px 60px; }
+    section { padding: 60px 20px; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .stat-item { padding: 28px 20px; }
+    .why-grid { grid-template-columns: 1fr; }
+    footer { padding: 40px 20px; }
+    .footer-top { grid-template-columns: 1fr; gap: 30px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .footer-tags { text-align: center; }
+    .divider { padding: 0 20px; }
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-mark">G</div>
+    <span class="logo-text">Grand<span>bet</span></span>
+  </a>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    Platform Çevrimiçi
+  </div>
+  <a href="https://grandbet515.com" class="nav-cta">
+    🔒 Güvenli Giriş
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-diamond"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">Lisanslı & Düzenlenmiş · Uluslararası Oyun Otoritesi</div>
+
+    <h1>
+      <strong>Grandbet</strong>
+      Resmi Giriş &
+      <em>Casino Türkiye</em>
+    </h1>
+
+    <p class="hero-sub">
+      Türk oyuncular için resmi Grand Bet platformu. Yüzlerce lisanslı casino oyununun, 
+      güvenilir ödemelerin ve dünya standartlarında bir oyun deneyiminin keyfini çıkarmak 
+      için güvenle giriş yapın.
+    </p>
+
+    <div class="hero-actions">
+      <a href="https://grandbet515.com" class="btn-primary">
+        🔒 Grandbet Güvenli Giriş
+      </a>
+    </div>
+
+    <div class="hero-trust">
+      <div class="trust-item">
+        <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0l1.5 4.5H14L10.5 7l1.5 4.5L8 9 4 11.5 5.5 7 2 4.5h4.5z"/></svg>
+        SSL Şifreli
+      </div>
+      <div class="trust-item">
+        <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0l1.5 4.5H14L10.5 7l1.5 4.5L8 9 4 11.5 5.5 7 2 4.5h4.5z"/></svg>
+        7/24 Destek
+      </div>
+      <div class="trust-item">
+        <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0l1.5 4.5H14L10.5 7l1.5 4.5L8 9 4 11.5 5.5 7 2 4.5h4.5z"/></svg>
+        Anında Erişim
+      </div>
+      <div class="trust-item">
+        <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0l1.5 4.5H14L10.5 7l1.5 4.5L8 9 4 11.5 5.5 7 2 4.5h4.5z"/></svg>
+        Sorumlu Oyun
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat-item">
+    <div class="stat-num">500+</div>
+    <div class="stat-label">Casino Oyunu</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">2M+</div>
+    <div class="stat-label">Kayıtlı Oyuncu</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">₺250K</div>
+    <div class="stat-label">Günlük Ödeme</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">99.9%</div>
+    <div class="stat-label">Platform Çalışma Süresi</div>
+  </div>
+</div>
+
+<!-- HOW TO LOGIN -->
+<section class="how-to">
+  <div class="section-eyebrow">Hesap Erişimi</div>
+  <h2 class="section-title">Grand Bet'e <em>Güvenli</em><br>Nasıl Giriş Yapılır</h2>
+
+  <div class="how-to-grid">
+    <div class="how-to-text">
+      <p>
+        Grandbet hesabınıza Türkiye'den erişmek son derece kolay ve güvenliğiniz 
+        gözetilerek tasarlanmıştır. Platforma yapılan her bağlantı, kişisel kimlik 
+        bilgilerinizin ve finansal ayrıntılarınızın tamamen gizli kalmasını sağlayan 
+        endüstri standardı 256-bit SSL şifrelemesiyle korunmaktadır.
+      </p>
+      <p>
+        İster masaüstü tarayıcısından ister mobil cihazdan giriş yapın, Grandbet 
+        güvenli giriş süreci tutarlı, hızlı ve güvenilir olmayı sürdürür. Kimlik 
+        avı girişimlerinden korunmak için her zaman resmi Grandbet web sitesini kullanın.
+      </p>
+      <p>
+        Hesabınıza erişimde sorun yaşarsanız, 7/24 destek ekibimiz anında yardımcı 
+        olmaya hazırdır.
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">I</div>
+        <div class="step-content">
+          <h4>Resmi Siteyi Ziyaret Edin</h4>
+          <p>Her zaman doğrulanmış Grandbet resmi alan adına gidin. Tarayıcınızın adres çubuğundaki HTTPS kilit simgesini kontrol edin.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">II</div>
+        <div class="step-content">
+          <h4>Bilgilerinizi Girin</h4>
+          <p>Kayıtlı e-posta adresinizi ve şifrenizi girin. Ekstra güvenlik için iki faktörlü kimlik doğrulamayı etkinleştirin.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">III</div>
+        <div class="step-content">
+          <h4>Doğrula & Oyna</h4>
+          <p>Gerekirse kimlik doğrulamasını tamamlayın, ardından yüzlerce lisanslı oyunuyla tam Grandbet casino lobisine erişin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span>◆</span></div>
+
+<!-- WHY GRANDBET -->
+<section>
+  <div class="section-eyebrow">Neden Grandbet</div>
+  <h2 class="section-title">Grandbet Resmi Site —<br><em>Neden Önemlidir</em></h2>
+  <p class="section-desc">
+    Güvenin her şey olduğu bu sektörde, adalet ve güvenliği önemseyen Türk oyuncular 
+    için resmi ve lisanslı platformda oynamak vazgeçilmezdir.
+  </p>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">⚖</div>
+      <h3>Uluslararası Lisanslı & Düzenlenmiş</h3>
+      <p>Grandbet, Avrupa'nın en saygın düzenleyici kurumlarından biri olan uluslararası oyun lisansı kapsamında faaliyet göstermektedir.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🛡</div>
+      <h3>Uçtan Uca Veri Koruma</h3>
+      <p>GDPR standartlarına uygun gelişmiş şifreleme teknolojileri ve katı veri koruma politikaları ile bilgileriniz her zaman güvende.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">⚡</div>
+      <h3>Hızlı & Doğrulanmış Para Çekme</h3>
+      <p>Kazançlar, güvenilir ödeme yöntemleriyle hızla işlenir. Fonlarınızın korunduğu tam şeffaflıkla gerçekleştirilen ödemeler.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">♾</div>
+      <h3>Sorumlu Oyun Araçları</h3>
+      <p>Para yatırma limitleri, oturum zamanlayıcıları ve kendini dışlama seçenekleri hesap kontrol panelinizden erişilebilir.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">📱</div>
+      <h3>Tam Mobil Uyumlu</h3>
+      <p>iOS ve Android cihazlar için tamamen optimize edilmiştir. Uygulama indirmeye gerek kalmadan masaüstündekiyle aynı kaliteli deneyim.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">💬</div>
+      <h3>7/24 Çok Dilli Destek</h3>
+      <p>Canlı sohbet ve e-posta ile her saat ulaşılabilir destek. Türk oyuncular için Türkçe dahil birçok dilde hızlı yardım.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GAMES -->
+<section class="games">
+  <div class="section-eyebrow">Oyun Kütüphanesi</div>
+  <h2 class="section-title">Premium Grand Bet<br><em>Casino Oyunları</em></h2>
+
+  <div class="games-layout">
+    <div class="games-text">
+      <p>
+        Grandbet'in casino kütüphanesi, olağanüstü grafikleri ve yüksek oyuncuya-dönüş 
+        yüzdeleriyle tanınan dünyanın önde gelen yazılım sağlayıcılarından özenle derlenmektedir.
+      </p>
+      <p>
+        Profesyonel stüdyolardan gerçek zamanlı yayınlanan canlı krupiye oyunlarından 
+        ilgi çekici temalara sahip yüzlerce video slotuna kadar Grandbet, Türkiye'deki 
+        oyuncular için gerçek anlamda premium bir ortam sunmaktadır.
+      </p>
+      <p>
+        Platformdaki her oyun, rastgeleliği ve adilliği sağlamak amacıyla bağımsız 
+        denetimden geçirilmektedir.
+      </p>
+      <br>
+      <a href="https://grandbet515.com" class="btn-primary" style="display:inline-flex; margin-top:10px;">
+        Oyunları Keşfet →
+      </a>
+    </div>
+
+    <div class="game-categories">
+      <div class="game-cat">
+        <div class="game-cat-name">
+          <div class="game-cat-icon">🎰</div>
+          Video Slotlar
+        </div>
+        <div class="game-cat-count">300+</div>
+      </div>
+      <div class="game-cat">
+        <div class="game-cat-name">
+          <div class="game-cat-icon">♠</div>
+          Canlı Casino Masaları
+        </div>
+        <div class="game-cat-count">120+</div>
+      </div>
+      <div class="game-cat">
+        <div class="game-cat-name">
+          <div class="game-cat-icon">🃏</div>
+          Masa & Kart Oyunları
+        </div>
+        <div class="game-cat-count">60+</div>
+      </div>
+      <div class="game-cat">
+        <div class="game-cat-name">
+          <div class="game-cat-icon">💎</div>
+          Jackpot Oyunları
+        </div>
+        <div class="game-cat-count">45+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span>◆</span></div>
+
+<!-- FAQ -->
+<section>
+  <div class="section-eyebrow">Yardım Merkezi</div>
+  <h2 class="section-title" style="text-align:center">Sık Sorulan <em>Sorular</em></h2>
+
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary class="faq-q">
+        Grandbet resmi casino Türk oyuncular için güvenli midir?
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-a">Evet. Grandbet, oyuncu koruması, adil oyun ve kara para aklamayla mücadele konusunda katı standartları karşılamasını zorunlu kılan geçerli bir uluslararası oyun lisansı bulundurmaktadır. Türk oyuncular, uluslararası oyun düzenlemeleri kapsamında tam olarak korunmaktadır.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">
+        Grand Bet giriş bilgilerimi nasıl kurtarabilirim?
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-a">Şifrenizi unuttuysanız Grand Bet güvenli giriş sayfasındaki "Şifremi Unuttum" bağlantısına tıklayın. Kayıtlı e-posta adresinize bir sıfırlama bağlantısı gönderilecektir. Daha fazla yardım için 7/24 destek ekibiyle canlı sohbet aracılığıyla iletişime geçin.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">
+        Grandbet Türkiye'de hangi ödeme yöntemlerini kabul ediyor?
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-a">Grandbet; başlıca kredi ve banka kartları (Visa, Mastercard), popüler e-cüzdanlar ve banka havalesi dahil kapsamlı bir ödeme seçenekleri yelpazesini desteklemektedir. Tüm işlemler güvenli şekilde ve AB finansal düzenlemelerine tam uyum içinde gerçekleştirilmektedir.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">
+        Grandbet resmi sitesine cep telefonumdan erişebilir miyim?
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-a">Kesinlikle. Platform önce mobil yaklaşımıyla inşa edilmiştir. Grand Bet güvenli giriş, oyun lobisi ve kasa; özel bir uygulama gerektirmeksizin her modern akıllı telefon veya tablet tarayıcısında tam işlevsellikle kullanılabilmektedir.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="section-eyebrow">Oynamaya Hazır mısınız?</div>
+  <h2 class="section-title">Grandbet Resmi Casino'ya<br><em>Bugün Erişin</em></h2>
+  <p class="section-desc">
+    Türkiye'deki binlerce memnun oyuncuya katılın; tamamen lisanslı ve güvenli 
+    Grandbet platformunda premium casino deneyimi yaşamak için tek bir tık yeterli.
+  </p>
+  <a href="https://grandbet515.com" class="btn-primary">
+    🔒 Grandbet Güvenli Giriş
+  </a>
+  <p class="cta-note">18+ · Sorumlu Oynayın · Uluslararası Lisanslı</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="display:inline-flex; margin-bottom:8px;">
+        <div class="logo-mark">G</div>
+        <span class="logo-text">Grand<span>bet</span></span>
+      </a>
+      <p>Türkiye için resmi Grandbet casino platformu. Lisanslı, düzenlenmiş ve tüm oyuncularımıza dünya standartlarında güvenli bir oyun deneyimi sunmaya adanmıştır.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Hızlı Bağlantılar</h4>
+      <ul>
+        <li><a href="https://grandbet515.com">Grandbet Güvenli Giriş</a></li>
+        <li><a href="https://grandbet515.com">Hesap Oluştur</a></li>
+        <li><a href="https://grandbet515.com/casino">Casino Oyunları</a></li>
+        <li><a href="https://grandbet515.com/casino">Canlı Casino</a></li>
+        <li><a href="https://grandbet515.com/bonuslar">Promosyonlar</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Destek & Hukuki</h4>
+      <ul>
+        <li><a href="https://grandbet515.com/kurallar">Yardım Merkezi</a></li>
+        <li><a href="https://grandbet515.com/kurallar">Gizlilik Politikası</a></li>
+        <li><a href="https://grandbet515.com/kurallar">Kullanım Koşulları</a></li>
+        <li><a href="https://grandbet515.com/kurallar">Bize Ulaşın</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="responsible-box">
+    <p><strong>Sorumlu Oyun Bildirimi:</strong> Kumar yalnızca eğlence amacıyla oynanmalıdır. Kaybetmeyi göze alamayacağınızdan fazlasını asla risk altına koymayın. Kumarın bir sorun haline geldiğini düşünüyorsanız lütfen kendini dışlama araçlarımızı kullanın ya da <a href="https://www.yesilay.org.tr/">Türkiye sorumlu oyun destek hizmetleri</a> ile iletişime geçin. Yalnızca 18+.</p>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Grandbet. Tüm hakları saklıdır. Uluslararası bir oyun lisansı kapsamında faaliyet göstermektedir.</p>
+    <div class="footer-tags">Grand Bet Güvenli Giriş | Grandbet Resmi Casino | Grand Bet Türkiye</div>
+  </div>
+</footer>
+
+</body>
+</html>
